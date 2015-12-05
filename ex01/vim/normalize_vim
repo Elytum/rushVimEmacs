@@ -1,0 +1,9 @@
+f1
+2j e a   escape
+2j d3d
+3kp
+14j ea space escape
+2j d4d
+gg=G
+:%s/\s\+$//
+:wq
