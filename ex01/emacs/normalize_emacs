@@ -1,4 +1,4 @@
-C + c \ C + h    #header
+C + c C + h    #header
 C + n x 14      #simple move vers le bas
 M + f           #sauter en fin de mot
 space
