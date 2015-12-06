@@ -11,7 +11,7 @@
 
 ; Auto close brackets
 
-;(electric-pair-mode 1)
+(electric-pair-mode 1)
 
 
 
