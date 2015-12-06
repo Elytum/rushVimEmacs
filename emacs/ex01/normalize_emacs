@@ -1,17 +1,112 @@
-C + c C + h    #header
-M + g g 15     #goto line 15
-M + f           #sauter en fin de mot
+Avec probleme d'indentation :
+C + n
+C + n
+M + f
 space
-C + n x2        
-M + b           #sauter en debut de mot    
-C + k x4        #couper les lignes a copier
-C + p x2        #remonter de 2 lignes
-C + y           #coller les lignes couper les lignes
-M + g g 25
-M + f           
+M + b
+C + n
+C + n
+C + k	; 5x
+C + k
+C + k
+C + k
+C + k
+C + p
+C + p
+C + y
+M + g
+g
+1
+7
+enter
+M + f
 space
-C + n x2
-C + k x7
-C + x h         #select all
-M + C + \       #indent selected
-M + x delete-trailing-whitespace
+M + g
+g
+2
+3
+right-arrow
+enter
+C + x
+h
+M + C + \
+M + %
+M + i	;ou tab
+enter
+M + i
+M + i
+M + i
+enter
+!
+C + x
+h
+M + %
+space
+space
+space
+space
+enter
+M + i
+enter
+!
+C + x
+h
+M + %
+space
+space
+enter
+M + i
+enter
+!
+C + x
+h
+M + %
+M + i
+M + i
+M + i
+space
+enter
+enter
+!
+C + x
+C + s
+C + x
+C + c
+
+Sans problèmes d'indentation : (set les variable tab-width et c-basic-offset à 4)
+
+C + n
+C + n
+M + f
+space
+M + b
+C + n
+C + n
+C + k	; 5x
+C + k
+C + k
+C + k
+C + k
+C + p
+C + p
+C + y
+M + g
+g
+1
+7
+enter
+M + f
+space
+M + g
+g
+2
+3
+right-arrow
+enter
+C + x
+h
+M + C + \
+C + x
+C + s
+C + x
+C + c
