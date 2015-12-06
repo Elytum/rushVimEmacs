@@ -25,6 +25,7 @@ M + g
 g
 2
 3
+enter
 right-arrow
 enter
 C + x
@@ -60,20 +61,15 @@ enter
 !
 C + x
 h
-M + %
-M + i
-M + i
-M + i
-space
-enter
-enter
+M + x
+delete-trailing-whitespace
 !
 C + x
 C + s
 C + x
 C + c
 
-Sans problèmes d'indentation : (set les variable tab-width et c-basic-offset à 4)
+Sans problèmes d'indentation :
 
 C + n
 C + n
@@ -105,7 +101,16 @@ right-arrow
 enter
 C + x
 h
+M + %
+space
+space
+enter
+M + i
+enter
+C + x
+h
 M + C + \
+delete-trailing-whitespace
 C + x
 C + s
 C + x
