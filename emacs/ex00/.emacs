@@ -1,3 +1,7 @@
+; Packages installation
+(shell-command "mkdir -p ~/.emacs.d ; mkdir -p ~/.emacs.d/backup ; mkdir -p ~/.emacs.d/lisp ; if [ ! -f ~/.emacs.d/lisp/whitespace.el ] ; then ; curl -L http://www.emacswiki.org/emacs/download/whitespace.el > ~/.emacs.d/lisp/whitespace.el ; fi");
+
+
 ; Set automatic indentation
 
 (global-set-key "\C-m" 'newline-and-indent)
@@ -11,7 +15,7 @@
 
 ; Auto close brackets
 
-;(electric-pair-mode 1)
+(electric-pair-mode 1)
 
 
 
@@ -23,7 +27,7 @@
 
 
 ; Initialise highlighting package
-(load "~/.emacs.d/whitespace.el")
+(load "~/.emacs.d/lisp/whitespace.el")
 (global-whitespace-mode t)
 
 
@@ -44,5 +48,3 @@
 ; Activate swap files and backup files and set their directory
 
 (setq backup-directory-alist `(("." . "~/.emacs.d/backup")))
-
-; http://www.emacswiki.org/emacs/InstallingPackages
