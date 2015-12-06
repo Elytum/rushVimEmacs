@@ -1,5 +1,9 @@
+" Auto close brackets
+
 " Don't read me: Create plugin directory in case of need, then if the git of the plugin 'vim-autoclose' is not present, clones it, then if the plugin isn't 
-:call system('mkdir -p ~/.emacs.d ; mkdir -p ~/.emacs.d/backup ; mkdir -p ~/.vim/plugin ; if [ ! -f ~/.vim/plugin/AutoClose.vim ] ; then ; curl -L https://raw.githubusercontent.com/Townk/vim-autoclose/master/plugin/AutoClose.vim > ~/.vim/plugin/AutoClose.vim ; fi')
+:call system('mkdir -p ~/.vim ; mkdir -p ~/.vim/backup ; mkdir -p ~/.vim/plugin ; if [ ! -f ~/.vim/plugin/AutoClose.vim ] ; then ; curl -L https://raw.githubusercontent.com/Townk/vim-autoclose/master/plugin/AutoClose.vim > ~/.vim/plugin/AutoClose.vim ; fi')
+
+
 
 " Set automatic indentation 
 
@@ -33,9 +37,9 @@ call matchadd('TrailingWhitespace', '\s\+$')
 "			activate vim backup
 set backup
 "			set backup directory
-set backupdir=~/.emacs.d/backup/
+set backupdir=~/.vim/backup/
 "			set swap directory
-set dir=~/.emacs.d/backup/
+set dir=~/.vim/backup/
 
 
 
