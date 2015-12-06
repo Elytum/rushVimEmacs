@@ -1,67 +1,3 @@
-
-;(add-to-list 'load-path "~/.emacs.d/lisp/")
-;(load "highlight-chars") ;; best not to include the ending “.el” or “.elc”
-;(add-hook 'font-lock-mode-hook 'hc-highlight-tabs)
-
-;(load "whitespace") ;; best not to include the ending “.el” or “.elc”
-;(autoload 'whitespace-mode           "whitespace" "Toggle whitespace visualization."        t)
-;(autoload 'whitespace-toggle-options "whitespace" "Toggle local `whitespace-mode' options." t)
-(setq-default nobreak-char-display t)
-
-
-;(global-whitespace-mode)
-;(require 'whitespace)
-;(whitespace-toggle-options t)
-;(setq whitespace-space 'highlight)
-;(show-trailing-whitespace)
-;(setq whitespace-style (quote (trailing)))
-
-
-
-
-
-;(if (functionp 'global-hi-lock-mode)
-;		(global-hi-lock-mode 1)
-;	(hi-lock-mode 1))
-;
-;(highlight-regexp "regexp-custard" 'clear_line)
-
-;(whitespace-mode 1)
-;
-;(setq
-; whitespace-line-column 80
-; whitespace-style       '(face spaces))
-
-;(if (functionp 'global-hi-lock-mode)
-;		(global-hi-lock-mode 1)
-;	(hi-lock-mode 1))
-;(highlight-regexp (regexp-quote "clear_line"))
-
-
-;  ;;; Adds new defn-esque keyword highlighting.
-;(add-hook 'clojure-mode-hook
-;          '(lambda ()
-;             (font-lock-add-keywords
-;                nil
-;                '(("(\\(defwidget\\)\\s-+\\(\\w+\\)"
-;                   (1 font-lock-keyword-face)
-;                   (2 font-lock-function-name-face))))))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ; Set automatic indentation
 
 (global-set-key "\C-m" 'newline-and-indent)
@@ -86,15 +22,15 @@
 
 
 
-; Trailing whitespaces are highlighted
-
-;(setq-default show-trailing-whitespace t)
-
-
-
 ; Extra whitespaces are highlighted
 
 ;(setq-default show-spaces t)
+
+
+
+; Trailing whitespaces are highlighted
+
+(setq-default show-trailing-whitespace t)
 
 
 

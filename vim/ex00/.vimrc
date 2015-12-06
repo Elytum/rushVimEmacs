@@ -1,14 +1,14 @@
-" Auto close brackets
-
-" Don't read me: Create plugin directory in case of need, then if the git of the plugin 'vim-autoclose' is not present, clones it, then if the plugin isn't 
-:call system('mkdir -p ~/.vim ; mkdir -p ~/.vim/backup ; mkdir -p ~/.vim/plugin ; if [ ! -f ~/.vim/plugin/AutoClose.vim ] ; then ; curl -L https://raw.githubusercontent.com/Townk/vim-autoclose/master/plugin/AutoClose.vim > ~/.vim/plugin/AutoClose.vim ; fi')
-
-
-
 " Set automatic indentation 
 
 :set autoindent
 :set cindent
+
+
+
+" Auto close brackets
+
+" Don't read me: Create plugin directory in case of need, then if the git of the plugin 'vim-autoclose' is not present, clones it, then if the plugin isn't 
+:call system('mkdir -p ~/.vim ; mkdir -p ~/.vim/backup ; mkdir -p ~/.vim/plugin ; if [ ! -f ~/.vim/plugin/AutoClose.vim ] ; then ; curl -L https://raw.githubusercontent.com/Townk/vim-autoclose/master/plugin/AutoClose.vim > ~/.vim/plugin/AutoClose.vim ; fi')
 
 
 
