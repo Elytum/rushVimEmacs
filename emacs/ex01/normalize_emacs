@@ -1,0 +1,18 @@
+C + c C + h    #header
+C + n x 14      #simple move vers le bas
+M + f           #sauter en fin de mot
+space
+C + n x2        
+M + b           #sauter en debut de mot    
+C + k x4        #couper les lignes a copier
+C + p x2        #remonter de 2 lignes
+C + y           #coller les lignes couper les lignes
+C + n x12
+M + f           
+space
+C + n x2
+C + k x7
+C + x h         #select all
+M + C + \       #indent selected
+
+#Conseil: M + x delete-trailing-whitespace
