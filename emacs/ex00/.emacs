@@ -11,7 +11,7 @@
 
 ; Auto close brackets
 
-(electric-pair-mode 1)
+;(electric-pair-mode 1)
 
 
 
@@ -22,18 +22,27 @@
 
 
 
+; Initialise highlighting package
+(load "~/.emacs.d/whitespace.el")
+(global-whitespace-mode t)
+
+
+
 ; Extra whitespaces are highlighted
 
-;(setq-default show-spaces t)
+(setq whitespace-space-regexp "\\(  \\)")
 
 
 
 ; Trailing whitespaces are highlighted
 
-(setq-default show-trailing-whitespace t)
+(setq whitespace-style
+	'(face trailing spaces))
 
 
 
 ; Activate swap files and backup files and set their directory
 
 (setq backup-directory-alist `(("." . "~/.emacs.d/backup")))
+
+; http://www.emacswiki.org/emacs/InstallingPackages
