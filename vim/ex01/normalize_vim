@@ -1,9 +1,35 @@
-f1
-2j e a   escape
-2j d3d
-3kp
-14j ea space escape
-2j d4d
-gg=G
+j
+j
+e
+a
+space
+escape
+j
+j
+d
+3
+d
+3
+k
+p
+1
+4
+j
+e
+a
+space
+escape
+g
+g
+=
+G
+:%s/\s\s/\t/
+enter
 :%s/\s\+$//
+enter
+g
+g
+=
+G
 :wq
+enter
